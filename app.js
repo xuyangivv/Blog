@@ -5,7 +5,7 @@ const bodyParser=require('body-parser');
 const index=require("./routes/index_route");
 
 var app=express();
-var serve=app.listen(3000);
+var serve=app.listen(5050);
 //使用body-parser中间件
 app.use(bodyParser.urlencoded({extended:false}));
 //托管静态资源到public目录下
