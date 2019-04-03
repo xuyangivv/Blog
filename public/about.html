@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>关于</title>
+		<link rel="stylesheet" href="css/myself.css">
+		<link rel="stylesheet" href="css/nav.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/about.css">
+		<link rel="stylesheet" href="css/common.css">
+	</head>
+	<body>
+		<div class="shade">
+			<div class="demo">
+				<div class="container">
+					<!-- 导航栏 -->
+					<div id="nav"></div>
+					<!-- 内容 -->
+					<div class="about_content">
+						<div class="txt">
+							<h1>个人简介</h1>
+							<!-- 绘制渐变彩色线条 -->
+							<svg width="500" height="3">
+							<defs> <!--特效对象-->
+									<linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
+											<stop offset="0%" stop-color="red"></stop>
+											<stop offset="50%" stop-color="green"></stop>
+											<stop offset="100%" stop-color="yellow"></stop>    
+									</linearGradient>                   
+							</defs>
+							<rect x="0" y="0" width="500" height="3" fill="url(#g1)"></rect>
+							</svg>
+							<div id="blog_txt"></div>
+						</div>
+						<div id="weixin"></div>
+						<div id="qq"></div>
+						<div style="clear: both;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/nav.js"></script>
+		<script src="js/about.js"></script>
+	</body>
+</html>

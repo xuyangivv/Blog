@@ -1,0 +1,57 @@
+body,#name,#img,a,ul,li,h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-family: Neutraface,arial,sans-serif;
+	line-height: 1.5;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+#head a{
+	color:#0e4177ed;
+}
+#phone,#name,#zhuanmai{
+	float: left;
+}
+#wanbiao,#gjzb,#zhubao{
+	float: right;
+	line-height: 90px;
+}
+#wanbiao-f,#zhubao-f{
+	width: 32px;
+	height: 65px;
+}
+#gjzb-f{
+	width:64px;
+	height: 65px;
+}
+#wanbiao-f:hover,#gjzb-f:hover,#zhubao-f:hover{
+	border-bottom: 4px solid blueviolet;
+}
+#left,#xy,#right{
+	display: block;
+}
+#sousuo input,#heart,#mine{
+	display: block;
+	float: right;
+}
+#hunli,#xuyang,#serve{
+	float: left;
+	line-height: 90px;
+}
+#xuyang-f,#serve-f{
+	width:32px;
+	height: 65px;
+}
+#hunli-f{
+	width: 64px;
+	height: 65px;
+}
+#hunli-f:hover,#xuyang-f:hover,#serve-f:hover{
+	border-bottom: 4px solid blueviolet;
+}

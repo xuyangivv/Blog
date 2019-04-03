@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>xystore</title>
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+
+	</head>
+	<body>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/01.js"></script>
+		<div id="master">
+			<div id="head">
+				<div id="top">
+					<div id="left">
+						<ul id="lefttop">
+							<li id="name">
+								<img src="img/name.jpg">
+								<a>河南</a>
+							</li>
+							<li id="phone">
+								<img src="img/phone.png">
+								<a href="">10086</a>
+							</li>
+							<li id="zhuanmai">
+								<img src="img/zuobiao.png">
+								<a href="">专卖店</a>
+							</li>
+						</ul>
+						<ul id="leftbot">
+							<!-- 高级珠宝 -->
+							<li id="gjzb" class="act">
+								<div id="cent2">
+									<div id="gjzb-f">
+										<a href="">高级珠宝</a>
+									</div>									
+								</div>
+							</li>
+							<!-- 珠宝 -->
+							<li id="wanbiao">
+								<div id="cent1">
+									<div id="zhubao-f">
+										<a href="">珠宝</a>
+									</div>
+								</div>
+							</li>
+							<!-- 腕表 -->
+							<li id="zhubao">
+								<div id="cent3">
+									<div id="wanbiao-f">
+										<a href="">腕表</a>
+									</div>								
+								</div>
+							</li>
+							<div id="d2">
+							<ul id="uu">
+								<li class="active">
+									腕表
+								</li>
+								<li>
+									珠宝内容
+								</li>
+								<li>
+									高级珠宝内容
+								</li>
+							</ul>
+						</div>											
+					</div>
+					
+					</ul>
+					<a href="" id="xy"><img src="img/xy.png"></a>
+					<div id="right">
+						<ul id="righttop">
+							<li id="mine">
+								<a href=""><img src="img/head.png"></a>
+								<a href=""><b>我的账户</b></a>
+							</li>
+							<li id="heart">
+								<a href="">
+									<img src="img/heart.png">
+								</a>
+								<a href="">
+									<img src="img/bag.png">
+								</a>
+							</li>
+							<li id="sousuo">
+								<input type="image" id="search1" src="img/search.png" />
+								<input type="search" id="search2" placeholder="搜寻">
+							</li>
+						</ul>
+						<ul id="rightbot">
+							<!-- 婚礼系列 -->
+							<div id="cent4">
+								<li id="hunli">
+									<div id="hunli-f">
+										<a href="">婚礼系列</a>
+									</div>									
+								</li>
+							</div>
+							<!-- 徐洋 -->
+							<div id="cent5">
+								<li id="xuyang">
+									<div id="xuyang-f">
+										<a href="">徐洋</a>
+									</div>
+									
+								</li>
+							</div>
+							<!-- 服务 -->
+							<div id="cent6">
+								<li id="serve">
+									<div id="serve-f">
+										<a href="">服务</a>
+									</div>								
+								</li>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 轮播图板块 -->
+			<div id="btn1">
+				<div id="box">
+					<img id="img" />
+					<p id="text1"></p>
+					<p id="text2"></p>
+					<a id="prev" class="jt" href="javascript:void(0)">
+						<</a> <a id="next" class="jt" href="javascript:void(0)">>
+					</a>
+				</div>
+			</div>
+			<!-- 小轮播区域 -->
+			<div id="bt2">
+				<div id="sbox">
+
+				</div>
+			</div>
+			<!--  -->
+			<script>
+				// 隐藏区域
+				function my$(id){
+				return document.getElementById(id);
+			}
+			var liObj=my$('leftbot').getElementsByTagName('li');
+			var list=my$('d2').getElementsByTagName('li');
+			for(var i=0;i<liObj.length;i++){
+				liObj[i].setAttribute('index',i);
+				liObj[i].onmouseover=function(){
+					for(var j=0;j<liObj.length;j++){
+						liObj[j].removeAttribute('class');
+					}
+					this.className='act';
+					var num=this.getAttribute('index');
+					for(var m=0;m<list.length;m++){
+						list[m].removeAttribute('class');
+					}
+					list[num].className='active';
+					my$('d2').style.height="600px";
+				}
+				liObj[i].onmouseout=function(){
+					my$('d2').style.height="0";
+				}
+			}
+			my$('d2').onmouseover=function(){
+				my$('d2').style.height="600px";
+			}
+			my$('d2').onmouseout=function(){
+				my$('d2').style.height="0";
+			}
+					// 轮播图区域
+					var oBtn1 = document.getElementById("btn1");
+					var oBox = document.getElementById("box");
+					var oImg = document.getElementById("img");
+					var oText1 = document.getElementById("text1");
+					var oText2 = document.getElementById("text2");
+					var oPrev = document.getElementById("prev");
+					var oNext = document.getElementById("next");
+					var arrSrc = ["img/pic-1.jpg", "img/pic-2.jpg", "img/pic-5.jpg", "img/pic-4.jpg", "img/pic-5.jpg"];
+					var arrTxt = ["1", "2", "3", "4", "5"];
+					var num = 0;
+					var onOff = true; //true 循环  false 走顺序
+
+					function fn() { //开始先定义一个公共函数方便下面调用
+						oImg.src = arrSrc[num]; //图片的显示路径
+
+					}
+					fn(); /*切记，定义之后，这里一定要调用一下*/
+					//循环按钮
+					oBtn1.onclick = function() {
+						onOff = true;
+					};
+					oPrev.onclick = function() {
+						num--;
+						//点击左边的箭头那么就是num--
+						if (onOff) {
+							//onOff默认是true所以就是走循环了
+							if (num == -1) {
+								//在一直减的过程中，数组里最小的就是0，所以等于-1的时候要循环下去所以让它显示最后一张
+								num = arrSrc.length - 1;
+							}
+						} else {
+							//否则onOff是false所以就是走顺序了
+							if (num == -1) {
+								//在一直减的过程中，数组里最小的就是0，所以等于-1的时候有数据走了，所以让它显示第一张不能点击了
+								num = 0;
+							}
+						}
+						//调用函数
+						fn();
+					};
+					//点击左边的箭头所做出的判断
+					oNext.onclick = function() {
+						num++;
+						if (onOff) {
+							if (num == arrTxt.length) {
+								num = 0;
+							}
+						} else {
+							if (num == arrTxt.length) {
+								num = arrSrc.length - 1;
+							}
+						}
+						fn();
+					}
+				
+			</script>
+
+	</body>
+</html>

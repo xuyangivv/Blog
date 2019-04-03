@@ -1,0 +1,449 @@
+#wb-item{
+	width: 80%;
+	margin: 0 auto;
+	background:#f8f8f8 ;
+	font-family: Didot,Times New Roman,serif;
+}
+/* 背景是图片部分 */
+.wb-bgimg{
+	width: 100%;
+	height: 300px;
+	display: block;
+	background: url(../img/wanbiaobanner.jpg) no-repeat;
+}
+.wb-bgimg img{
+	width: 100%;
+	height: 100%;
+}
+.wb-bgimg div:first-child {
+	text-align: center;
+	padding: 107px;
+}
+.wb-bgimg h2{
+	font-size: 43px;
+	color: white;
+}
+.wb-watch p{
+	font-size: 15px;
+	color: white;
+}
+/* 标语1，及文字下横线效果 */
+.wb-slogan-1{
+	text-align: center;
+}
+.wb-slogan-1{
+	color: #000;
+}
+#wb-slogan-1{
+	text-align: center;
+	color:#004f71 ;
+	margin-top: 45px;
+	font-size: 40px;
+}
+h2.wb-text-line:after {
+    width: 57px;
+    height: 4px;
+}
+
+.wb-text-line:after {
+    content: "";
+    display: block;
+    margin-top: 12px;
+	margin-bottom: 10px;
+    background-color: #fbcd36fa;
+}
+.wb-text-line-center:after {
+    margin-left: auto;
+    margin-right: auto;
+}
+/* 四个详情商品父元素div */
+#wb-content .grid-item {
+	width: 100%;
+	height:650px;
+	display: block;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 70px;
+}
+
+/* 四个商品详情div */
+#wb-content .grid-item .sitem {
+	width: 22%;
+	height: 557px;
+	float: left;
+	margin: 30px 0 0 35px;
+	background-color: white;
+	transition: 1s;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+#wb-content .grid-item .sitem img,
+.product__reference,
+.product__title,
+.con-text {
+	transition: 1s;
+}
+
+/* 鼠标放入放大元素 */
+#wb-content .sitem img:hover {
+	transform: scale(1.1, 1.1);
+}
+/* 内容模块 */
+#wb-content .cont {
+	width: 100%;
+	height: 530px;
+}
+
+#wb-content .product__title {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	font-size: 1.25rem;
+	font-weight: 700;
+	font-size: 25px;
+	color: #002246;
+	font-family: Didot, Times New Roman, serif;
+	text-align: left;
+	margin-bottom: 29px;
+	margin-left: 19px;
+}
+
+#wb-content .product__reference {
+	width: 44%;
+	margin-bottom: 10px;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #747474a8;
+	text-align: left;
+	font-family: Tw Cen MT, arial, sans-serif;
+	margin-left: 19px;
+}
+
+#wb-content .con-text img {
+	vertical-align: middle;
+}
+
+/* 带色横线 */
+#wb-content .con-price {
+	width: 100%;
+	height: 50px;
+	font-size: 1.25rem;
+	font-weight: 700;
+	font-family: Neutraface, arial, sans-serif;
+	color: #002246;
+	margin-top: 28px;
+}
+
+#wb-content div.line:after {
+	width: 40px;
+	height: 4px;
+}
+
+#wb-content .line-center:after {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#wb-content .line:after {
+	content: "";
+	display: block;
+	margin-top: -35px;
+	background-color: #fbcd36fa;
+}
+/* 系列  下横线*/
+#wb-series{
+	height: 1900px;
+	display: block;
+}
+#wb-slogan-1 h2.wb-text-line:after {
+    width: 28px;
+    height: 4px;
+}
+#wb-slogan-1 .wb-text-line-center:after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#wb-slogan-1 .wb-text-line:after {
+    content: "";
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    background-color: #fbcd36fa;
+}
+#wb-ser-text{
+	margin-bottom: 120px;
+}
+/* 商品分类列表 */
+.wb-classify{
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+}
+.classify{
+	width: 30%;
+	height: 510px;
+	background: url(../img/wb-1.jpg) no-repeat;
+	color: #FFFFFF;
+	font-weight:700;
+	float: left;
+	margin-bottom: 20px;
+}
+.fy_left,.fy_center_1,.fy_last_1,
+.fy_left_2,.fy_center_2,.fy_last_2{
+	transition: 0.1s;
+}
+.fy_left:hover,.fy_center_1:hover,.fy_last_1:hover,
+.fy_center_2:hover,.fy_left_2:hover,.fy_last_2:hover{
+	box-shadow:365px 0px 15px 0px #2726263b   inset;
+	cursor: pointer;
+}
+/* 图片上的文本 */
+.classify-text{
+	width: 100%;
+	position: relative;
+	left: 0;
+	top: 300px;
+	text-align: center;
+}
+   /* 文字下横线 */
+.classify h2.wb-text-line:after {
+    width: 40px;
+    height: 4px;
+}
+#wb-series .wb-text-line-center:after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#wb-series .wb-text-line:after {
+    content: "";
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    background-color: #fbcd36fa;
+}
+/* 中间div样式 */
+.fy_center_1{
+	margin-left: 20px;
+	margin-right:20px;
+	position: relative;
+	top: -70px;
+	background: url(../img/wb-4.jpg);
+}
+/* 第一排右边 */
+.fy_last_1{
+	background: url(../img/wb-3.jpg) ;
+}
+.fy_text{
+	font-size: 15px;
+	font-weight: normal;
+}
+.fy_left{
+	margin-left:50px ;
+}
+/* 第二排 */
+.fy_left_2{
+	background: url(../img/wb-6.jpg);
+}
+.fy_center_2{
+	background: url(../img/wb-7.jpg);
+}
+.fy_last_2{
+	background: url(../img/wb-5.jpg);
+}
+/*两个大banner商品图  */
+.wb-con-banner {
+	width: 100%;
+	margin-top: 50px;
+}
+.fy_bottom{
+	width: 30%;
+	height: 510px;
+	color: #FFFFFF;
+	font-weight:700;
+	float: left;
+	margin-bottom: 20px;
+}
+.fy_bottom_2{
+	margin: 0 20px 0 20px;
+	background: url(../img/wb-7.jpg);
+}
+.fy_bottom_1,.fy_bottom_3{
+	margin-left: 50px;
+}
+.wb-banner-item1{
+	width: 80%;
+	height: 450px;
+	background-color: white;
+	margin: 0 auto;
+}
+.wb-ban-it1 {
+	width: 88%;
+	height: 450px;
+	margin: 0 auto;
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	padding-left:32px;
+}
+/* 按钮 */
+#con-all {
+	width: 150px;
+	height: 50px;
+	border: 1px solid #004f71;
+	position: relative;
+	text-align: center;
+	line-height: 49px;
+	cursor: pointer;
+	margin-left: -289px;
+	float: left;
+}
+
+#con-all p {
+	margin: 0 auto;
+	color: white;
+}
+
+#con-all:befor {
+	content: "";
+	display: table;
+}
+
+#con-all .con-good a {
+	font-size: 15px;
+	font-weight: 600;
+	font-family: Didot, Times New Roman, serif;
+	color:#004f71;
+}
+
+#con-all #con-line {
+	width: 0px;
+	height: 3px;
+	border-radius: 5px;
+	background-color:#004f71;
+	margin: 0 auto;
+	position: absolute;
+	top: 47px;
+	left: 0px;
+	right: 0px;
+	transition: width 0.3s linear;
+}
+
+#con-all:hover #con-line {
+	width: 150px;
+}
+/* 返回顶部 */       
+#wb-toTop {
+	width: 80%;
+	margin: 60px auto 0;
+	text-align: center;
+	cursor: pointer;
+	color: #747474;
+}
+#wb-toTop img{
+	width: 40px;
+    height: 23px;
+	position: relative;
+    top: 10px;
+}
+#wb-toTop:hover{
+	color: #000000;
+}
+#wb-toTop img{
+	transition: 0.5s;
+}
+#wb-toTop:hover img{
+	transform: translateY(-8px);
+}
+/* 大banner图 */
+.wb-con-banner-text {
+	width: 45%;
+	height: 100%;
+	float: left;
+	background-image: repeating-linear-gradient(to right, #000 0%, #272727 120%);
+	box-shadow: 15px 0px 0px rgba(0, 0, 0, 0.9);
+	text-align: center;
+	font-family: Didot, Times New Roman, serif;
+	display: block;
+	color: white;
+	padding-top: 130px;
+}
+.wb-con-banner-text .con-p1{
+	margin-top: 10px;
+}
+/* 面包屑导航 */
+#last{
+	display: block;
+}
+.wb-crumbs{
+	width: 100%;
+	height:40px;
+	border-top: 1px solid #0000001c;
+	border-bottom: 1px solid #0000001c;
+	text-align: left;
+	margin-left: 50px;
+}
+.wb-crumbs img{
+	width: 25px;
+	height: 25px;
+	padding-top: 6px;
+	float: left;
+	margin-left: 10px;
+}
+.wb-cr-text{
+	color: #004f71;
+	width: 40px;
+	float: left;
+	line-height: 40px;
+	margin-left: 10px;
+}
+/* 点击显示隐藏内容 */
+.wb-con-box li{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	border-top: 1px solid #2e5c8cd4;
+	cursor: pointer;
+}
+#container-bot .continer-menu .wb-con-box .wb-text{
+	width: 100%;
+	height:129px ;
+}
+.wb-con-box .wb-text .wb-con-box-1{
+	width: 100%;
+	height: 100%;
+	font-size: 15px;
+}
+.wb-con-box .wb-text .wb-con-box-1 li{
+	width: 100%;
+	height:42px;
+	background:#dfe2e6;
+	line-height: 42px;
+	transition: 0.6s;
+}
+#container-bot .wb-con-box-1 li a{
+	color:#002246;
+}
+.wb-con-box .wb-text .wb-con-box-1 li:hover{
+	background-color: #c7cace;
+}
+.wb-abc1{
+	display: block;
+}
+.wb-logo-text{
+	width: 91%;
+	height: 100%;
+	float: left;
+	margin-left: 20px;
+}
+.wb-logo-1{
+	width: 5%;
+	height: 100%;
+	float: left;
+	line-height: 58px;
+}
+.wb-logo-1 img{
+	width: 26px;
+	height: 21px;
+}

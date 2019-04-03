@@ -1,0 +1,138 @@
+.shade{
+    height: 1400px;
+}
+.datum{
+    width: 100%;
+    height:749px;
+}
+.bookrack{
+    width:50%;
+    height: 100%;
+    background:url(../img/datum/bookrack.jpg) no-repeat;
+}
+.bookrack ul{
+    height:160px;
+}
+.bookrack ul li{
+    width: 155px;
+    height: 155px;
+    margin-left:20px;
+    margin-right:15px;
+    float: left;
+    text-align: center;
+}
+.bookrack ul li:nth-child(4){
+	margin-top:39px;
+}
+/* 资料详情 */
+.datum_details{
+    float:right;
+    width:48%;
+    height:400px;
+    background:rgba(0,0,0,.5);
+}
+.datum_details h4{
+    color:#d7dddd;
+    padding-left:20px;
+    padding-top:10px;
+}
+.datum_details hr{
+    border: 1px solid #74adaa !important;
+}
+.datum_details p{
+    padding-left: 20px;
+    padding-right:30px;
+    color:#c6cbcb;
+}
+/* 右边详情标题 */
+.datum_details div h4:nth-child(1){
+    display: block;
+}
+.datum_details div h4:nth-child(2),h4:nth-child(3),h4:nth-child(4){
+    display:none;
+}
+#ptxt div{
+    display: none;
+    text-indent: 2em;
+}
+#ptxt div:nth-child(1){
+	display: block;
+}
+/* 动画 */
+.cartoon{
+    width: 48%;
+    height: 350px;
+    padding-top:30px;
+    background:rgba(0,0,0,.5);
+    float: right;
+    overflow: hidden;
+}
+/* 小鸟 */
+.cartoon .bird{
+    width: 60px;
+    height:60px;
+    position: relative;
+    top:100px;
+    animation: bird 1s infinite linear;
+}
+@keyframes bird{
+    0%{  left:250px;top:-210px;}
+    25%{ left:250px;top:-214px;}
+    50%{ left:250px;top:-210px;}
+    75%{ left:250px;top:-214px;}
+    100%{left:250px;top:-210px;}
+}
+/* 草地 */
+#colee_left{
+    width:100%;
+    height:320px;
+    overflow: hidden;
+}
+#colee_left td{
+    padding:0;
+}
+.tt {
+    width:576px;
+    height:320px;
+    display: block;
+}
+/* 轮播书籍————走马灯 */
+/* 标题 */
+.order {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-top:80px;
+ }
+.order .line {
+    display: inline-block;
+    width: 200px;
+    border-top: 2px solid #74adaa;
+ }
+ .order .txt {
+    color: #74adaa;
+    vertical-align: middle;
+    font-size: 20px;
+ }
+/* 轮播 */
+#roll{
+    width:100%;
+    height:200px;
+    overflow:hidden;
+}
+#sm #pic1 td,#sm #pic2 td{
+	width:100px;
+	height: 100%;
+	padding: 5px;
+}
+#sm #pic1 img,#sm #pic2 img{
+	width: 60px;
+	height: 40px;
+}
+#roll table td{
+    padding:0px 5px !important;
+    border:0 !important;
+}
+#roll table td img{
+    height: 100%;
+}
