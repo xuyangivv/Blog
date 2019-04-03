@@ -16,7 +16,7 @@ xhr.onreadystatechange=function(){
             qq+="<img src="+result[0].contact_qq+" alt='QQ'>";
         txt.innerHTML=p;
         img_weixn.innerHTML=wx;
-        img_qq.innerHTML=qq;
+        img_qq.innerHTML=qq;     
      }
     }
  xhr.open("get","http://127.0.0.1:5050/about",true);

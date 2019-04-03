@@ -97,6 +97,6 @@ xhr.onreadystatechange=function(){
 // 			 list.innerHTML=i;
 // 		 }
 // 	}
-// 	xhr.open("get","http:127.0.0.1:3000/roll",true);
+// 	xhr.open("get","http:127.0.0.1:5050/roll",true);
 // 	xhr.send();
 // }
