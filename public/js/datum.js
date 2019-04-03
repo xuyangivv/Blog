@@ -80,7 +80,7 @@ xhr.onreadystatechange=function(){
 	 }
 	 
 }
- xhr.open("get","http://127.0.0.1:5050/pic",true);
+ xhr.open("get","http://127.0.0.1:3000/pic",true);
  xhr.send();
 
 // 获取底部轮播图
@@ -97,6 +97,6 @@ xhr.onreadystatechange=function(){
 // 			 list.innerHTML=i;
 // 		 }
 // 	}
-// 	xhr.open("get","http:127.0.0.1:5050/roll",true);
+// 	xhr.open("get","http:127.0.0.1:3000/roll",true);
 // 	xhr.send();
 // }

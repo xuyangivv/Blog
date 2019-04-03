@@ -3,7 +3,6 @@ const express=require('express');
 const bodyParser=require('body-parser');
 //引入路由模块
 const index=require("./routes/index_route");
-
 var app=express();
 var serve=app.listen(5050);
 //使用body-parser中间件

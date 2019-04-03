@@ -6,7 +6,7 @@ const express=require("express");
 const pool=require("../pool.js");
 //创建路由对象
 const router=express.Router();
-//:5050/index
+//:3000/index
 //添加路由
 
 

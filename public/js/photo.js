@@ -14,6 +14,6 @@ var xhr = new XMLHttpRequest();
         }
     }
 // 3.打开链接
-    xhr.open("get","http://127.0.0.1:5050/photo",true);
+    xhr.open("get","http://127.0.0.1:3000/photo",true);
 // 4.发送请求
 xhr.send();
