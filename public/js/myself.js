@@ -70,7 +70,7 @@ var xhr = new XMLHttpRequest();
         }
     }
 // 3.打开链接
-    xhr.open("get","http://127.0.0.1:3000/carousel",true);
+    xhr.open("get","http://127.0.0.1:5050/carousel",true);
 // 4.发送请求
 xhr.send();
 })()
@@ -140,7 +140,7 @@ function blogs(){
                                         e.target.setAttribute("data-zan",1);    
                                     }
                                 }
-                            xhr.open("get","http://127.0.0.1:3000/dianzan?id="+id,true);
+                            xhr.open("get","http://127.0.0.1:5050/dianzan?id="+id,true);
                             xhr.send();
                         }else{
                             alert("您已经赞过此篇文章！")
@@ -175,7 +175,7 @@ function blogs(){
                                     e.target.setAttribute("data-look",1);
                                 }
                             }
-                            xhr.open("get","http://127.0.0.1:3000/viewnum?id="+id,true);
+                            xhr.open("get","http://127.0.0.1:5050/viewnum?id="+id,true);
                             xhr.send(); 
                         }
                      }
@@ -183,7 +183,7 @@ function blogs(){
             }
         }
     // 3.打开链接
-        xhr.open("get","http://127.0.0.1:3000/index",true);
+        xhr.open("get","http://127.0.0.1:5050/index",true);
     // 4.发送请求
     xhr.send();
 }
@@ -205,7 +205,7 @@ function message(){
         }  
           
     }
-    xhr.open("post","http://127.0.0.1:3000/blog_message",true);
+    xhr.open("post","http://127.0.0.1:5050/blog_message",true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 	var formdata = 'name=' + name + '&email=' + email+ '&message=' + message+ '&selection=' + selection;
     xhr.send(formdata);
